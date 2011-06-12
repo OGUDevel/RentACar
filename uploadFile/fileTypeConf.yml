@@ -1,0 +1,5 @@
+## author: regularlambda
+## Enable or disable MIME types from here.
+--- #Associative array of known filetypes
+"image/jpeg": 30000
+
