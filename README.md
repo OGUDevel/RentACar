@@ -1,3 +1,6 @@
+PHP 5.3 Framework veya Symphony Framework kullanılacak
+=======================================================
+
 README
 ==========
 
