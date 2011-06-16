@@ -1,0 +1,16 @@
+id, username, userpass, level, e_mail, name, surname, adress, security_code, status
+
+
+CREATE TABLE `users` ( 
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(25) NOT NULL,
+  `userpass` varchar(250) NOT NULL,
+  `level` int(2) NOT NULL, 
+  `e_mail` varchar(50) NOT NULL, 
+  `name` varchar(50) NOT NULL, 
+  `surname` varchar(50) NOT NULL,
+  `adress` varchar(250) NOT NULL,
+  `security_code` varchar(250) NOT NULL, 
+  `status` varchar(20) default 'passive', 
+  PRIMARY KEY  (`id`) 
+) ENGINE=MyISAM;
