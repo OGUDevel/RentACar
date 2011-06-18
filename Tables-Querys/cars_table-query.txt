@@ -1,0 +1,14 @@
+id, plate, car_model, model_year, color, owner, price, status,
+
+
+CREATE TABLE `users` ( 
+  `id` int(11) NOT NULL auto_increment,
+  `plate` varchar(25) NOT NULL,
+  `car_model` varchar(50) NOT NULL,
+  `model_year` int(2) NOT NULL, 
+  `color` varchar(50) NOT NULL, 
+  `owner` varchar(50) NOT NULL, 
+  `price` int(50) NOT NULL,
+  `status` varchar(20) default 'müsait', 
+  PRIMARY KEY  (`id`) 
+) ENGINE=MyISAM;
