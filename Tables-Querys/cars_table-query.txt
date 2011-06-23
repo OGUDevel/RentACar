@@ -1,4 +1,4 @@
-id, plate, car_model, model_year, color, owner, price, status,
+id, plate, car_model, model_year, color, owner, price, status, publish, campaign
 
 
 CREATE TABLE `users` ( 
@@ -9,7 +9,7 @@ CREATE TABLE `users` (
   `color` varchar(50) NOT NULL, 
   `owner` varchar(50) NOT NULL, 
   `price` int(50) NOT NULL,
-  `status` varchar(20) default 'müsait', 
+  `status` varchar(20) default '1', 
   `publish` int(3) default '1',
   `campaign` int(3) default '0',
    PRIMARY KEY  (`id`) 
