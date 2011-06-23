@@ -1,0 +1,1 @@
+Konu aciklamasi icin Wiki'ye bakilacak.
