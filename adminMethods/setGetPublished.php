@@ -5,7 +5,7 @@
  */ 
 class setPublishedAdvert{
 	private
-	function setTag(){
+	function set_tag(){
     $query = "UPDATE cars SET tag='pbl' WHERE id=<<CheckBox'larin name'leri ilan panelden secildiginde buraya yerlestirilecek id degerleri>>";
     $set_pbl = mysql_query($query);
 	if($set_pbl){
@@ -21,11 +21,11 @@ class setPublishedAdvert{
  * getPublishedAdvert Class
  */
 class PublishedAdvert extends setPublishedAdvert{
-    function getTag(){
+    function get_tag(){
     static $pbl_tag = $_GET['tag'];
-	$query = "WHERE tag='pbl' SELECT * FROM dbName"
+	$query = "SELECT * FROM dbName WHERE tag='pbl'"
     $select_pbl = mysql_query($query);
-	if($select_pbl){
+	if($select_pbl != NULL){
 		$idfromtable = mysql_fetch_array($select_pbl, MYSQL_BOTH);
 		print_r($idfromtable, true);
 	}
@@ -37,10 +37,10 @@ class PublishedAdvert extends setPublishedAdvert{
 
 function execute_set_published(){
 	$setpubl = new setPublishedAdvert;
-	$setpubl.setTag();
+	$setpubl.set_tag();
 }
 function execute_get_published(){
 	$getpubl = new PublishedAdvert;
-	$getpubl.getTag();
+	$getpubl.get_tag();
 }
 ?>

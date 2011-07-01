@@ -2,7 +2,7 @@
 function ilan_kampanya(){
     static $ilan_id = $_GET['id'];
     $kampanya_yap = mysql_query ("UPDATE cars SET campaign=TRUE WHERE id='$ilan_id'");
-	if ($kampanya_yap){
+	if ($kampanya_yap != NULL){
 	echo "<b><font face='verdana' size='2' color='green'>Ilan kampanya durumuna getirildi.</font></b>";
 	}
 	else {
