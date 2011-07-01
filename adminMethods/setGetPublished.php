@@ -4,7 +4,6 @@
  * setPublishedAdvert Class
  */ 
 class setPublishedAdvert{
-	private
 	function set_tag(){
     $query = "UPDATE cars SET tag='pbl' WHERE id=<<CheckBox'larin name'leri ilan panelden secildiginde buraya yerlestirilecek id degerleri>>";
     $set_pbl = mysql_query($query);
@@ -37,10 +36,10 @@ class PublishedAdvert extends setPublishedAdvert{
 
 function execute_set_published(){
 	$setpubl = new setPublishedAdvert;
-	$setpubl.set_tag();
+	$setpubl->set_tag();
 }
 function execute_get_published(){
 	$getpubl = new PublishedAdvert;
-	$getpubl.get_tag();
+	$getpubl->get_tag();
 }
 ?>
