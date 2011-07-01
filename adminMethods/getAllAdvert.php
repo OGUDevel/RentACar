@@ -1,4 +1,3 @@
-
 <?php
 function get_all_advert(){
 	static $ilan_id = $_GET['id'];
