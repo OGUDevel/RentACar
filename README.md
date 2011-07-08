@@ -1,7 +1,7 @@
 RentACar
 =========
 Version numarasını görmek için "Source" kısmının altındaki "Switch Tags" kısmına bakınız.
-Version'dan kodları çekmek için 
+Version'dan kodları çekmek için `git pull RentACar tagname` kullanınız.
 
 PHP 5.3 Framework veya Symphony Framework 1.4.11 kullanılacak
 =======================================================
