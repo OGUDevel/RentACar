@@ -1,3 +1,5 @@
 # Ignored directories (DO NOT REMOVE)
 $GIT_DIR/nbproject/
 $GIT_DIR/.settings/
+.project
+.DS_Store
